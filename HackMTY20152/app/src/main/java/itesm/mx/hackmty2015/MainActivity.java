@@ -15,9 +15,8 @@ import java.util.ArrayList;
 public class MainActivity extends ActionBarActivity {
 
     // Declaracion de Variables
-    private static final int REQUEST_CODE = 1;
-
-    ArrayList usuarios = new ArrayList<String>();
+    private static final int REQUEST_CODE = 1;          // Code usado para response de signup
+    ArrayList usuarios = new ArrayList<String>();       // Lista de usuarios
     EditText userET;
 
     @Override

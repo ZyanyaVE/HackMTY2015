@@ -18,7 +18,7 @@
 
         android:id="@+id/linearLayout">
         <EditText
-            android:id="@+id/IdET"
+            android:id="@+id/nombreUsuarioET"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@drawable/edittext_top_bg"
