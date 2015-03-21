@@ -1,9 +1,11 @@
 package itesm.mx.hackmty2015;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -13,6 +15,7 @@ public class SignUpActivity extends ActionBarActivity {
     // Declaracion de Variables
     EditText nombreUsuarioET;
     Button signupBT;
+    String [] usuarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +26,17 @@ public class SignUpActivity extends ActionBarActivity {
         nombreUsuarioET = (EditText) findViewById(R.id.nombreUsuarioET);
         signupBT = (Button) findViewById(R.id.signupBT);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null){
+        }
+    }
 
+    public void onClickRegistrarse(View v){
+        Intent registrarseIntent = new Intent (SignUpActivity.this, MainActivity.class);
+
+        registrarseIntent.putExtra("nombreUsuario", nombreUsuarioET.getText().toString());
+
+        startActivity(registrarseIntent);
     }
 
 
