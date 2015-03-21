@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 
 public class SignUpActivity extends ActionBarActivity {
@@ -15,7 +18,7 @@ public class SignUpActivity extends ActionBarActivity {
     // Declaracion de Variables
     EditText nombreUsuarioET;
     Button signupBT;
-    String [] usuarios;
+    ArrayList usuarios = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +29,28 @@ public class SignUpActivity extends ActionBarActivity {
         nombreUsuarioET = (EditText) findViewById(R.id.nombreUsuarioET);
         signupBT = (Button) findViewById(R.id.signupBT);
 
+        // Se obtiene el dato de usuarios que se mandó desde MainActivity para ver si ya existe
+            // algun usuario
         Bundle extras = getIntent().getExtras();
         if (extras != null){
+            usuarios = extras.getStringArrayList("usuarios");
         }
+
     }
 
     public void onClickRegistrarse(View v){
-        Intent registrarseIntent = new Intent (SignUpActivity.this, MainActivity.class);
 
-        registrarseIntent.putExtra("nombreUsuario", nombreUsuarioET.getText().toString());
+        if (!(usuarios.contains(nombreUsuarioET.getText().toString()))){
+            Intent registrarseIntent = new Intent ();
 
-        startActivity(registrarseIntent);
+            registrarseIntent.putExtra("nombreUsuario", nombreUsuarioET.getText().toString());
+
+            setResult(RESULT_OK, registrarseIntent);
+            finish();
+        } else {
+            finish();
+            Toast.makeText(getApplicationContext(), "Usuario Existente, ingresar otro", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
