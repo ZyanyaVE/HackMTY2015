@@ -9,7 +9,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bNewList_0"
+        android:id="@+id/newListBT"
+        android:onClick="onClickNewList"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:text="New List" />
@@ -18,33 +19,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add List"
-        android:id="@+id/bAddList_0"
+        android:id="@+id/addListBT"
+        android:onClick="onClickAddList"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View List"
-        android:id="@+id/button4"
+        android:id="@+id/viewListBT"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/button5"
+        android:layout_toStartOf="@+id/editListBT"
         android:layout_marginEnd="40dp" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit List"
-        android:id="@+id/button5"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toStartOf="@+id/bAddList_0" />
+        android:id="@+id/editListBT"
+        android:layout_alignTop="@+id/viewListBT"
+        android:layout_toStartOf="@+id/addListBT" />
 
     <ListView
         android:layout_width="500dp"
         android:layout_height="400dp"
-        android:id="@+id/listView"
+        android:id="@+id/eventListLV"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
