@@ -28,6 +28,10 @@
             android:name=".VerListaActivity"
             android:label="@string/title_activity_ver_lista" >
         </activity>
+        <activity
+            android:name=".AddNewList"
+            android:label="@string/title_activity_add_new_list" >
+        </activity>
     </application>
 
 </manifest>

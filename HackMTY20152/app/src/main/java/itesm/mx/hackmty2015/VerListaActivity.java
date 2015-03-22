@@ -16,6 +16,43 @@ import java.util.List;
 
 public class VerListaActivity extends ActionBarActivity {
 
+/*
+    // Articulos por evento
+    art = new Articulo(0, "Cerveza", 20);
+    fiesta.add(art);
+    art = new Articulo(1, "Papas", 10);
+    fiesta.add(art);
+    art = new Articulo(2, "Chocolates", 2);
+    fiesta.add(art);
+    art = new Articulo(3, "Coca", 5);
+    fiesta.add(art);
+    art = new Articulo(0, "Coca", 5);
+    despensa.add(art);
+    art = new Articulo(1, "Coca", 5);
+    despensa.add(art);
+    art = new Articulo(2, "Coca", 5);
+    despensa.add(art);
+    art = new Articulo(0, "XBox", 1);
+    laredo.add(art);
+    art = new Articulo(1, "Mac", 10);
+    laredo.add(art);
+
+
+
+
+    // Inicializacion Lista de Eventos
+    eventos.add("Fiesta"); eventos.add("Despensa Familia") ; eventos.add("Ida a Laredo");
+
+    // Hashmap que guarda los arraylists de articulos segun el evento en el que deben ir
+    evento.put("Fiesta", fiesta);
+    evento.put("Despensa Familia", despensa);
+    evento.put("Ida a Laredo", laredo);
+
+
+    adapter = new ArrayAdapter<String>(this, R.layout.evento_row,R.id.rowTV,eventos);
+
+    eventLV.setAdapter(adapter);
+  */
     // Declaracion de Variables
     ArrayList<String> articulos = new ArrayList<String>();
     ArrayList<Integer> cantidades = new ArrayList<Integer>();

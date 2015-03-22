@@ -27,7 +27,7 @@
         <ListView
             android:layout_width="wrap_content"
             android:layout_height="400dp"
-            android:id="@+id/eventLV"
+            android:id="@+id/listview_of_lists"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
