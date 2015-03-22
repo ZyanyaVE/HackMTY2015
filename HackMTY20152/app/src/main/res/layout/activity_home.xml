@@ -23,14 +23,14 @@
             />
 
         <Button
+            android:id="@+id/addListBT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add List"
-            android:id="@+id/addListBT"
             android:onClick="onClickAddList"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:gravity="right"/>
+            android:text="Share List"
+            />
     </LinearLayout>
 
     <ListView

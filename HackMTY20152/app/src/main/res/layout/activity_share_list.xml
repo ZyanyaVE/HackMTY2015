@@ -25,10 +25,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_top_bg"
             android:padding="10dp"
-            android:hint="Nombre de Usuario"
+            android:hint="Insert the desired list's code"
             android:textColorHint="#cccccc"
-            android:textSize="22sp"
-            android:drawableLeft="@drawable/usersmall"/>
+            android:textSize="22sp"/>
 
 
         <Button
@@ -37,7 +36,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_marginTop="25dp"
-            android:text="Sign Up"
+            android:text="Share"
+            android:textColor="#99000000"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg"
             android:onClick="onClickRegistrarse"/>
