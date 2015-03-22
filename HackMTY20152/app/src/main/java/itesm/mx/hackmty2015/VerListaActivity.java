@@ -52,6 +52,7 @@ public class VerListaActivity extends ActionBarActivity {
             art.add(auxArticulos);
         }
         return art;
+        //hola
     }
 
 
