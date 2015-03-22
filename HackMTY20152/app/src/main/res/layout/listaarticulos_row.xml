@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+<<<<<<< HEAD
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -41,3 +42,6 @@
 
     </TableLayout>
 </LinearLayout>
+=======
+</LinearLayout>
+>>>>>>> 73e724380a7b4f9c3563d30938ee7917bac19eac
