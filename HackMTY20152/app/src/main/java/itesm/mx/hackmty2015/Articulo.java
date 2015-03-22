@@ -10,7 +10,8 @@ public class Articulo{
     private String nombre;
     private int cantidad;
     private int precio;
-
+//sdfsfgshsfghdfgh
+    ////dfghfhjdgh
     public Articulo(int id, String nombre, int cantidad, int precio) {
         this.cantidad = cantidad;
         this.nombre = nombre;

@@ -29,7 +29,6 @@
             android:textColorHint="#cccccc"
             android:textSize="22sp"/>
 
-
         <Button
             android:id="@+id/signupBT"
             android:layout_width="match_parent"
