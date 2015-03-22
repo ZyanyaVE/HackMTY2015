@@ -75,6 +75,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="71dp"
-        android:src="@drawable/"/>
+        android:src="@drawable/asas"/>
 </RelativeLayout>
 

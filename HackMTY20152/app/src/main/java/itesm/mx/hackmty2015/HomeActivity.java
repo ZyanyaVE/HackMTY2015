@@ -45,14 +45,25 @@ public class HomeActivity extends ActionBarActivity {
 
 
                 ArrayList<String> listanombres = new ArrayList<String>();
+                ArrayList<Integer> listaPrecios = new ArrayList<Integer>();
+
                 for (int i = 0; i < evento.get(aux).size(); i++){
                     // Regresa el arraylist guardado en el id _ del hashmap
                     ArrayList<Articulo> art = evento.get(aux);
                     listanombres.add(art.get(i).getNombre());
+
+                }
+                ArrayList<Integer> listacantidad = new ArrayList<Integer>();
+                for (int i = 0; i < evento.get(aux).size(); i++){
+                    // Regresa el arraylist guardado en el id _ del hashmap
+                    ArrayList<Articulo> art = evento.get(aux);
+                    listacantidad.add((art.get(i).getCantidad()));
                 }
 
                 Intent verListaIntent = new Intent(HomeActivity.this, VerListaActivity.class);
-                verListaIntent.putStringArrayListExtra("articulos", listanombres);
+
+                verListaIntent.putExtra("articulos", listanombres);
+                verListaIntent.putExtra("cantidades",listacantidad);
 
                 startActivity(verListaIntent);
             }
@@ -60,23 +71,23 @@ public class HomeActivity extends ActionBarActivity {
         eventLV.setOnItemClickListener(itemListener);
 
         // Articulos por evento
-        art = new Articulo(0, "Cerveza", 20, 35);
+        art = new Articulo(0, "Cerveza", 20);
         fiesta.add(art);
-        art = new Articulo(1, "Papas", 10, 10);
+        art = new Articulo(1, "Papas", 10);
         fiesta.add(art);
-        art = new Articulo(2, "Chocolates", 2, 20);
+        art = new Articulo(2, "Chocolates", 2);
         fiesta.add(art);
-        art = new Articulo(3, "Coca", 5, 12);
+        art = new Articulo(3, "Coca", 5);
         fiesta.add(art);
-        art = new Articulo(0, "Coca", 5, 12);
+        art = new Articulo(0, "Coca", 5);
         despensa.add(art);
-        art = new Articulo(1, "Coca", 5, 12);
+        art = new Articulo(1, "Coca", 5);
         despensa.add(art);
-        art = new Articulo(2, "Coca", 5, 12);
+        art = new Articulo(2, "Coca", 5);
         despensa.add(art);
-        art = new Articulo(0, "XBox", 1, 9999);
+        art = new Articulo(0, "XBox", 1);
         laredo.add(art);
-        art = new Articulo(1, "Mac", 10, 35000);
+        art = new Articulo(1, "Mac", 10);
         laredo.add(art);
 
 
