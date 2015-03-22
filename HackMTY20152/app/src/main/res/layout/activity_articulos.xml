@@ -19,18 +19,9 @@
             android:onClick="onClickNewList"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:text="New List"
+            android:text="Back To Sections"
             />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add List"
-            android:id="@+id/addListBT"
-            android:onClick="onClickAddList"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:gravity="right"/>
     </LinearLayout>
 
     <ListView
@@ -39,5 +30,12 @@
         android:id="@+id/eventLV"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_alignTop="@+id/eventLV"
+        android:layout_alignEnd="@+id/eventLV" />
 
 </RelativeLayout>
