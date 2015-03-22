@@ -8,6 +8,7 @@ import android.os.Parcelable;
 public class Articulo{
     private int id;
     private String nombre;
+
     private Integer cantidad;
 
     public Articulo(int id, String nombre, Integer cantidad) {
