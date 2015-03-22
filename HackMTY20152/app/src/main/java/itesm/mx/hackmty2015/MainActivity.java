@@ -30,6 +30,7 @@ public class MainActivity extends ActionBarActivity {
         // Usuarios preestablecidos
         usuarios.add("Jose123");
         usuarios.add("ILoveTec95");
+        usuarios.add("jibril");
     }
 
     // Revisa si el usuario existe antes de irse a home page
