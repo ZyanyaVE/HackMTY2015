@@ -60,23 +60,23 @@ public class HomeActivity extends ActionBarActivity {
         eventLV.setOnItemClickListener(itemListener);
 
         // Articulos por evento
-        art = new Articulo(0, "Cerveza", 20);
+        art = new Articulo(0, "Cerveza", 20, 35);
         fiesta.add(art);
-        art = new Articulo(1, "Papas", 10);
+        art = new Articulo(1, "Papas", 10, 10);
         fiesta.add(art);
-        art = new Articulo(2, "Chocolates", 2);
+        art = new Articulo(2, "Chocolates", 2, 20);
         fiesta.add(art);
-        art = new Articulo(3, "Coca", 5);
+        art = new Articulo(3, "Coca", 5, 12);
         fiesta.add(art);
-        art = new Articulo(0, "Coca", 5);
+        art = new Articulo(0, "Coca", 5, 12);
         despensa.add(art);
-        art = new Articulo(1, "Coca", 5);
+        art = new Articulo(1, "Coca", 5, 12);
         despensa.add(art);
-        art = new Articulo(2, "Coca", 5);
+        art = new Articulo(2, "Coca", 5, 12);
         despensa.add(art);
-        art = new Articulo(0, "XBox", 1);
+        art = new Articulo(0, "XBox", 1, 9999);
         laredo.add(art);
-        art = new Articulo(1, "Mac", 10);
+        art = new Articulo(1, "Mac", 10, 35000);
         laredo.add(art);
 
 
