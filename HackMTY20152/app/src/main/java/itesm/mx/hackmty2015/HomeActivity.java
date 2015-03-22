@@ -19,9 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 
 //asdasdasdas
-//asdasdasdd
-//asdasdasdd
-//asdasdasdd
 public class HomeActivity extends ActionBarActivity {
 
     // Declaración de Variables
