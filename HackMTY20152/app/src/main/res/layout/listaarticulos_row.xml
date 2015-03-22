@@ -2,4 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+<<<<<<< HEAD
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/idTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="id"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/nombreTV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="nombre"
+                android:layout_column="7"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/cantidadTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0"
+                android:layout_column="8"
+                android:textColor="#000000"/>
+        </TableRow>
+
+    </TableLayout>
 </LinearLayout>
+=======
+</LinearLayout>
+>>>>>>> 73e724380a7b4f9c3563d30938ee7917bac19eac

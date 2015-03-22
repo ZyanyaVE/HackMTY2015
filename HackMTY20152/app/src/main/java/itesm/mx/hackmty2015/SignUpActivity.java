@@ -39,7 +39,6 @@ public class SignUpActivity extends ActionBarActivity {
     }
 
     public void onClickRegistrarse(View v){
-
         if (!(usuarios.contains(nombreUsuarioET.getText().toString()))){
             Intent registrarseIntent = new Intent ();
 
