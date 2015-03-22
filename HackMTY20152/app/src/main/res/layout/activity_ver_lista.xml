@@ -6,19 +6,11 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="itesm.mx.hackmty2015.VerListaActivity">
 
-<<<<<<< HEAD
     <ListView
         android:id="@+id/articulosLV"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
-</RelativeLayout>
-=======
-    <TextView android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/HelloWorld"/>
 
 </LinearLayout>
->>>>>>> 73e724380a7b4f9c3563d30938ee7917bac19eac
