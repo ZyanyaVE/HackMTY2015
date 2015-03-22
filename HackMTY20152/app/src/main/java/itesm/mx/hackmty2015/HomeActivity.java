@@ -45,14 +45,18 @@ public class HomeActivity extends ActionBarActivity {
 
 
                 ArrayList<String> listanombres = new ArrayList<String>();
+                ArrayList<Integer> listaPrecios = new ArrayList<Integer>();
+
                 for (int i = 0; i < evento.get(aux).size(); i++){
                     // Regresa el arraylist guardado en el id _ del hashmap
                     ArrayList<Articulo> art = evento.get(aux);
                     listanombres.add(art.get(i).getNombre());
+                    listaPrecios.add(art.get(i).getPrecio());
                 }
 
                 Intent verListaIntent = new Intent(HomeActivity.this, VerListaActivity.class);
                 verListaIntent.putStringArrayListExtra("articulos", listanombres);
+                verListaIntent.putIntegerArrayListExtra("articulosPrecios", listaPrecios);
 
                 startActivity(verListaIntent);
             }

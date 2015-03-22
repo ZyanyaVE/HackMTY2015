@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.TextureView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class VerListaActivity extends ActionBarActivity {
 
     // Declaracion de Variables
     TextView helloWorld;
+    TextView productPrice;
     ArrayList<String> aux = new ArrayList<String>();
 
     @Override
@@ -21,11 +23,16 @@ public class VerListaActivity extends ActionBarActivity {
         setContentView(R.layout.activity_ver_lista);
 
         helloWorld = (TextView) findViewById(R.id.HelloWorld);
+        productPrice = (TextView) findViewById(R.id.Price);
 
         Bundle extras = getIntent().getExtras();
-        aux = extras.getStringArrayList("articulos");
 
+        aux = extras.getStringArrayList("articulos");
         helloWorld.setText(aux.get(0));
+
+       // aux = extras.getIntegerArrayList("articulosPrecios");
+
+
     }
 
 
