@@ -24,6 +24,10 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".VerListaActivity"
+            android:label="@string/title_activity_ver_lista" >
+        </activity>
     </application>
 
 </manifest>
