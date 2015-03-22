@@ -6,9 +6,9 @@ import android.os.Parcelable;
  * Created by ZyanyaVE on 3/21/15.
  */
 public class Articulo{
+
     private int id;
     private String nombre;
-
     private Integer cantidad;
 
     public Articulo(int id, String nombre, Integer cantidad) {
