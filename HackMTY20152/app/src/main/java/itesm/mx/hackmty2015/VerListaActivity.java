@@ -4,28 +4,54 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class VerListaActivity extends ActionBarActivity {
 
     // Declaracion de Variables
-    TextView helloWorld;
-    ArrayList<String> aux = new ArrayList<String>();
+    ArrayList<String> articulos = new ArrayList<String>();
+    ArrayList<Integer> cantidades = new ArrayList<Integer>();
+    ListView articulosLV;
+    ListViewAdapterArticulos adapter;
+    List<Articulo> art = new ArrayList<Articulo>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_lista);
 
-        helloWorld = (TextView) findViewById(R.id.HelloWorld);
+        // Referencias a articulos de interface
+        articulosLV = (ListView) findViewById(R.id.articulosLV);
 
+        // Se coloca el arreglo de dispositivos en la lista
+        adapter = new ListViewAdapterArticulos(getApplicationContext(), R.layout.listaarticulos_row, getDataForListView());
+        articulosLV.setAdapter(adapter);
+
+        getDataForListView();
+
+    }
+
+    public List<Articulo> getDataForListView(){
+        Articulo auxArticulos;
+
+        // Se recupera de bundle extras el ArrayList articulos del evento presionado en HomeActivity
         Bundle extras = getIntent().getExtras();
-        aux = extras.getStringArrayList("articulos");
+        articulos = extras.getStringArrayList("articulos");
+        cantidades = extras.getIntegerArrayList("cantidades");
 
-        helloWorld.setText(aux.get(0));
+        for (int i = 0; i < articulos.size(); i++){
+            auxArticulos = new Articulo(i, articulos.get(i).toString(), cantidades.get(i));
+            art.add(auxArticulos);
+        }
+        return art;
     }
 
 

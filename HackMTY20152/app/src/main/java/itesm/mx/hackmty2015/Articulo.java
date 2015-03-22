@@ -8,9 +8,9 @@ import android.os.Parcelable;
 public class Articulo{
     private int id;
     private String nombre;
-    private int cantidad;
+    private Integer cantidad;
 
-    public Articulo(int id, String nombre, int cantidad) {
+    public Articulo(int id, String nombre, Integer cantidad) {
         this.cantidad = cantidad;
         this.nombre = nombre;
         this.id = id;
@@ -36,7 +36,7 @@ public class Articulo{
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
     }
 }
