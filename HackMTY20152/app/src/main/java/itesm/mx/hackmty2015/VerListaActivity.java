@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,7 +22,6 @@ public class VerListaActivity extends ActionBarActivity {
     ListView articulosLV;
     ListViewAdapterArticulos adapter;
     List<Articulo> art = new ArrayList<Articulo>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,7 @@ public class VerListaActivity extends ActionBarActivity {
 
         // Se recupera de bundle extras el ArrayList articulos del evento presionado en HomeActivity
         Bundle extras = getIntent().getExtras();
+
         articulos = extras.getStringArrayList("articulos");
         cantidades = extras.getIntegerArrayList("cantidades");
 
